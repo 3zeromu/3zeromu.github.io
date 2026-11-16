@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:3zeromu.github.io",
+  "verificationMethod": [
+    {
+      "id": "did:web:3zeromu.github.io#root-key",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:3zeromu.github.io",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "crViK9pmp8q2B_wmSSsyDd7CloMWMxofn7uF8_RQXWs",
+        "kid": "did:web:3zeromu.github.io#root-key"
+      }
+    },
+    {
+      "id": "did:web:3zeromu.github.io#session-key",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:3zeromu.github.io",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "bWVKP_mzudEMXL6OrvtnJZuDJbaGpXVavcodyj7T6kE",
+        "kid": "did:web:3zeromu.github.io#session-key"
+      }
+    }
+  ],
+  "authentication": ["did:web:3zeromu.github.io#session-key"],
+  "assertionMethod": ["did:web:3zeromu.github.io#root-key"]
+}
